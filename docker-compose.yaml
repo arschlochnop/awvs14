@@ -1,0 +1,12 @@
+version: '3'
+services:
+  awvs14:
+    image: awvs14:210615184
+    container_name: awvs14
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "6443:3443"
+    restart: always
+
